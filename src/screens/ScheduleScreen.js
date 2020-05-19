@@ -1,10 +1,10 @@
 import * as React from 'react';
-import { Text, View } from 'react-native';
+import {Text, View} from 'react-native';
 
-export function ScheduleScreen(){
-    return(
-        <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-            <Text>Schedule Screen</Text>
-        </View>
-    )
+export function ScheduleScreen() {
+  return (
+    <View style={{flex: 1, justifyContent: 'center', alignItems: 'center'}}>
+      <Text>Schedule Screen</Text>
+    </View>
+  );
 }

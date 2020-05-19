@@ -1,10 +1,24 @@
 import * as React from 'react';
-import { Text, View } from 'react-native';
+import {NavigationContainer} from '@react-navigation/native';
+import {View, Text, StyleSheet} from 'react-native';
 
-export function AdviceScreen(){
-    return(
-        <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-            <Text>Advice Screen</Text>
-        </View>
-    )
+import AdviceScreenContent from './AdviceScreenContent';
+
+export function AdviceScreen() {
+  return (
+    <View>
+      <View>
+        <Text style={styles.title}>Advices</Text>
+      </View>
+      <AdviceScreenContent />
+    </View>
+  );
 }
+
+var styles = StyleSheet.create({
+  title: {
+    fontSize: 40,
+    margin: 20,
+    textAlign: 'right',
+  },
+});
